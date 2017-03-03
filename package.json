@@ -1,0 +1,74 @@
+{
+  "name": "fractal-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Parth Mehta",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-plugin-module-resolver": "^2.5.0",
+    "babel-plugin-transform-object-assign": "^6.22.0",
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^0.26.2",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "express": "^4.15.0",
+    "file-loader": "^0.10.1",
+    "node-sass": "^4.5.0",
+    "open": "0.0.5",
+    "postcss-loader": "^1.3.3",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
+    "webpack": "^2.2.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^2.4.1",
+    "webpack-hot-middleware": "^2.10.0"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "es2015",
+      "stage-2"
+    ],
+    "plugins": [
+      "transform-object-assign",
+      "transform-react-display-name",
+      [
+        "module-resolver",
+        {
+          "root": [
+            "./custom_modules"
+          ],
+          "alias": {
+            "vanilla-masker": "./custom_modules/vanilla-masker/vanilla-masker.js"
+          }
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "immutable": "^3.8.1",
+    "konva": "^1.4.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-konva": "^1.1.1",
+    "react-redux": "^5.0.3",
+    "redbox-react": "^1.2.5",
+    "redux": "^3.6.0",
+    "redux-immutablejs": "0.0.8"
+  }
+}

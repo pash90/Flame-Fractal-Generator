@@ -1,0 +1,41 @@
+$spacingSmall: 4px;
+$spacingMedium: 8px;
+$spacingLarge: 16px;
+$spacingExtraLarge: 32px;
+
+.card {
+    background: white;
+    width: 45%;
+    border-radius: $spacingSmall;
+    overflow: hidden;
+    margin-top: $spacingLarge;
+
+    .header {
+        height: $spacingExtraLarge;
+        background: #F7F7F7;
+        box-shadow: 0 1px 4px #DCDCDC;
+
+        p {
+            margin: 0 0 0 $spacingLarge;
+            line-height: $spacingExtraLarge;
+            font-size: $spacingLarge;
+            font-weight: bold;
+        }
+    }
+
+    .content {
+        padding-top: $spacingMedium;
+        padding-bottom: $spacingMedium;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .parameter {
+            margin-top: $spacingSmall;
+        }
+
+        .input {
+            margin: $spacingSmall $spacingMedium $spacingLarge $spacingLarge;
+        }
+    }
+}

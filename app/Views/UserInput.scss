@@ -1,0 +1,11 @@
+$spacingSmall: 4px;
+$spacingMedium: 8px;
+$spacingLarge: 16px;
+$spacingExtraLarge: 32px;
+
+.container {
+    width: 50%;
+    height: 800px;
+    background: black;
+    padding: $spacingLarge;
+}

@@ -1,0 +1,31 @@
+$spacingSmall: 4px;
+$spacingMedium: 8px;
+$spacingLarge: 16px;
+$colorUnselected: #9E9E9E;
+$colorSelected: #2196F3;
+
+.radio-button {
+    margin: $spacingSmall 0 $spacingSmall 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    cursor: pointer;
+
+    .radio {
+        width: $spacingLarge;
+        height: $spacingLarge;
+        border: 1px solid $colorUnselected;
+        border-radius: 2px;
+        margin-left: $spacingLarge;
+
+        &.selected {
+            background-color: $colorSelected;
+            border-color: $colorSelected;
+        }
+    }
+
+    .text {
+        margin: 0 0 0 $spacingMedium;
+    }
+}
